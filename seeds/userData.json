@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Benjamin",
+    "email": "Benjamin.lee@email.com",
+    "password": "password1234"
+  },
+  {
+    "name": "Test User",
+    "email": "Test.User@email.com",
+    "password": "supersectretpassword"
+  }
+]

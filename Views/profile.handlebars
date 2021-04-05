@@ -1,0 +1,27 @@
+<h1>Create Post</h1>
+<form class="createPost">
+  <br>
+  <h2>Title: </h2>
+  <input type="text" name="name" class="name">
+  <br>
+  <br>
+  <h2>text</h2>
+  <textarea name="postText" cols="30" rows="5" class="postText"></textarea>
+  <br>
+  <button type="submit">Submit Post</button>
+</form>
+<div class="card">
+        <h1>{{user.name}}</h1>
+        <h3 class="email">{{user.email}}</h3>
+        <h4 class="id">{{user.id}}</h4>
+      </div>
+
+      {{#each user.posts as |post| }}
+            <div class="card">
+        <h1>{{post.name}}</h1>
+        <h3>{{post.user}}</h3>
+        <p>{{post.description}}</p>
+        <a href="/api/posts/delete/{{post.id}}">Remove Post</a> 
+        <a href="/post/{{post.id}}">View Post</a> 
+      </div>
+      {{/each}}
